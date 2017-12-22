@@ -1,0 +1,24 @@
+{
+  "name": "start-static-sass",
+  "version": "1.0.0",
+  "description": "Start New Static Website with Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass-me":"node-sass sass/style.scss css/style.css -w"
+  },
+  "keywords": [
+    "HTML",
+    "-",
+    "CSS",
+    "-",
+    "Javascript",
+    "-",
+    "Sass"
+  ],
+  "author": "Marwan Alsaydali",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.1"
+  }
+}

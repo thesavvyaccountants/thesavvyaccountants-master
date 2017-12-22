@@ -1,0 +1,142 @@
+$navlinkcolor:#233e91;
+
+/*Header*/
+.header{
+        height: 90vh;
+        background-image:
+            linear-gradient(to right,rgba($navlinkcolor,0.8),rgba(225,225,255,0.4))
+            ,url(../img/back.jpeg);
+        background-size: cover;
+        background-position: left;
+        clip-path:  polygon(0 0, 100% 0, 100% 90vh, 0 80vh);
+        position: relative;
+    }
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .head-title{
+        color: #fff;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+    
+    }
+    .head-title-main{
+        display: block;
+        font-size: 40px60px;
+        font-weight: 400;
+        letter-spacing: 25px;
+        animation-name: toLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+    }
+    .head-title-sec{
+        display: block;
+        font-size: 20px;
+        font-weight:700;
+        letter-spacing: 25px;
+        animation-name: toRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        margin-bottom: 40px;
+    }
+
+/*main*/
+.cloud{
+   
+    background-color: $navlinkcolor;
+    margin-top: -20vh;
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.tax{
+    margin-top: -10vh;
+    background-color: white;
+    color: $navlinkcolor;
+    padding-top: 1rem;
+}
+.support{
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.main__body{
+text-align: center;
+color: $navlinkcolor;
+padding: 60px 0
+}
+
+/*Corporate*/
+
+.main__corporate{
+    background-image:
+    linear-gradient(to right,rgba($navlinkcolor,0.8),rgba(225,225,255,0.4))
+    ,url(../img/corporate.png);
+    height: 30vh;
+    background-position: bottom;
+    clip-path:  polygon(0 0, 100% 10vh, 100% 30vh, 0 20vh);
+    position: relative;
+}
+.corporate__tax{
+    text-align: center;
+    padding-top: 2rem;
+}
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 20vh;
+    clip-path:  polygon(0 0, 100% 10vh, 100% 20vh, 0 20vh);
+    position: relative;
+    background-color: black;
+    color: white;
+}
+.footer__icon{
+    color: black;
+}
+    /*Animation*/
+@keyframes toLeft {
+	0% {
+		opacity: 0;
+		transform: translate(-100px);
+	}
+	80% { 
+		transform: translate(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes toRight {
+	0% {
+		opacity: 0;
+		transform: translate(100px);
+	}
+	80% { 
+		transform: translate(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes toUp {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	80% { 
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
